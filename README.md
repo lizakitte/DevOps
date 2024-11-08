@@ -21,3 +21,16 @@
 `sudo docker run -itd -p 8080:8080 demowebbuild`
 
 `sudo docker run -itd -p 8080:8080 --name demowebbuild demowebbuild`
+
+## Dla docker compose
+Budowanie obrazów
+`docker compose build`
+
+Uruchomienie kontenerów
+`docker compose up`
+
+Uruchomienie kontenerów w tle
+`docker compose up -d`
+
+Zatrzymanie kontenerów, usunięcie sieci i wolumenów
+`docker compose down`
