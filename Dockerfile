@@ -7,8 +7,10 @@ COPY gs-rest-service-main/complete /app
 # Ustawianie workdira w kontenerze
 WORKDIR /app
 
+run /bin/bash /app/gradlew bootJar
+
 # Zbudowanie aplikacji
-RUN ./gradlew bootJar
+# RUN /app/gradlew bootJar
 
 # Wystawienie portu 8080
 EXPOSE 8080
